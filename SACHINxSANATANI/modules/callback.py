@@ -20,7 +20,7 @@ from SACHINxSANATANI.modules.helpers import (
 )
 
 
-@AMBOT.on_callback_query()
+@SACHIN.on_callback_query()
 async def cb_handler(_, query: CallbackQuery):
     if query.data == "HELP":
         await query.message.edit_text(
