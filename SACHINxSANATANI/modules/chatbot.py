@@ -10,7 +10,7 @@ from SACHINxSANATANI import SACHIN
 from SACHINxSANATANI.modules.helpers import CHATBOT_ON, is_admins
 
 
-@AMBOT.on_message(filters.command(["chatbot"]) & filters.group & ~filters.bot)
+@SACHIN.on_message(filters.command(["chatbot"]) & filters.group & ~filters.bot)
 @is_admins
 async def chaton_off(_, m: Message):
     await m.reply_text(
@@ -20,7 +20,7 @@ async def chaton_off(_, m: Message):
     return
 
 
-@AMBOT.on_message(
+@SACHIN.on_message(
     (filters.text | filters.sticker | filters.group) & ~filters.private & ~filters.bot,
 )
 async def chatbot_text(client: Client, message: Message):
@@ -109,7 +109,7 @@ async def chatbot_text(client: Client, message: Message):
                     )
 
 
-@AMBOT.on_message(
+@SACHIN.on_message(
     (filters.sticker | filters.group | filters.text) & ~filters.private & ~filters.bot,
 )
 async def chatbot_sticker(client: Client, message: Message):
@@ -200,7 +200,7 @@ async def chatbot_sticker(client: Client, message: Message):
                     )
 
 
-@AMBOT.on_message(
+@SACHIN.on_message(
     (filters.text | filters.sticker | filters.group) & ~filters.private & ~filters.bot,
 )
 async def chatbot_pvt(client: Client, message: Message):
@@ -246,7 +246,7 @@ async def chatbot_pvt(client: Client, message: Message):
                 await message.reply_text(f"{hey}")
 
 
-@AMBOT.on_message(
+@SACHIN.on_message(
     (filters.sticker | filters.sticker | filters.group)
     & ~filters.private
     & ~filters.bot,
