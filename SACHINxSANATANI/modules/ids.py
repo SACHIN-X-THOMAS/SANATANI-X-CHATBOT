@@ -4,7 +4,7 @@ from pyrogram.enums import ParseMode
 from SACHINxSANATANI import dev
 
 
-@dev.on_message(filters.command("id"))
+@dev.on_message(filters.command("isid"))
 async def getid(client, message):
     chat = message.chat
     your_id = message.from_user.id
