@@ -1,4 +1,4 @@
-# SANATANI-X-CHATBOT
+# SANATANI CHATBOT
 
 <h2 align="center">
     ──「 ᴘʀᴀᴛɪʙʜᴀ 」──
