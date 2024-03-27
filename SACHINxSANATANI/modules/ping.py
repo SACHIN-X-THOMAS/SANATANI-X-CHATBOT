@@ -12,7 +12,7 @@ from SACHINxSANATANI.database.users import add_served_user
 from SACHINxSANATANI.modules.helpers import PNG_BTN
 
 
-@dev.on_message(filters.command("isping", prefixes=["+", "/", "-", "?", "$", "&"]))
+@dev.on_message(filters.command("ping", prefixes=["/"]))
 async def ping(_, message: Message):
     await message.reply_sticker(sticker=random.choice(STICKER))
     start = datetime.now()
