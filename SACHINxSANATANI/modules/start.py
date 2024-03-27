@@ -21,7 +21,7 @@ from SACHINxSANATANI.modules.helpers import (
 )
 
 
-@dev.on_message(filters.command(["start", "aistart"]) & ~filters.bot)
+@dev.on_message(filters.command(["ISstart", "ISaistart"]) & ~filters.bot)
 async def start(_, m: Message):
     if m.chat.type == ChatType.PRIVATE:
         accha = await m.reply_text(
@@ -53,7 +53,7 @@ async def start(_, m: Message):
         await add_served_chat(m.chat.id)
 
 
-@dev.on_message(filters.command(["help"], prefixes=["+", ".", "/", "-", "?", "$"]))
+@dev.on_message(filters.command(["IShelp"], prefixes=["+", ".", "/", "-", "?", "$"]))
 async def help(client: SACHIN, m: Message):
     if m.chat.type == ChatType.PRIVATE:
         hmm = await m.reply_photo(
@@ -71,7 +71,7 @@ async def help(client: SACHIN, m: Message):
         await add_served_chat(m.chat.id)
 
 
-@dev.on_message(filters.command("repo") & ~filters.bot)
+@dev.on_message(filters.command("ISrepo") & ~filters.bot)
 async def repo(_, m: Message):
     await m.reply_text(
         text=SOURCE_READ,
@@ -80,7 +80,7 @@ async def repo(_, m: Message):
     )
 
 
-@dev.on_message(filters.new_chat_members)
-async def welcome(_, m: Message):
-    for member in m.new_chat_members:
-        await m.reply_photo(photo=random.choice(IMG), caption=START)
+#@dev.on_message(filters.new_chat_members)
+#async def welcome(_, m: Message):
+#    for member in m.new_chat_members:
+#        await m.reply_photo(photo=random.choice(IMG), caption=START)
