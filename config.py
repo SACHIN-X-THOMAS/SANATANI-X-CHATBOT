@@ -9,7 +9,7 @@ API_HASH = getenv("API_HASH", "4e984ea35f854762dcde906dce426c2d")
 BOT_TOKEN = getenv("BOT_TOKEN", None)
 OWNER_ID = int(getenv("OWNER_ID", "5959548791"))
 MONGO_URL = getenv("MONGO_URL", "mongodb+srv://Bikash:Bikashop@bikash.cbkkx4c.mongodb.net/?retryWrites=true&w=majority")
-SUPPORT_GRP = getenv("SUPPORT_GRP", "CODEX_KA_BAAP_4ST")
+SUPPORT_GRP = getenv("SUPPORT_GRP", "Il_4ST_FIGHTER_lI")
 UPDATE_CHNL = getenv("UPDATE_CHNL", "ALL_SANATANI_BOT")
 OWNER_USERNAME = getenv("OWNER_USERNAME", "V_VIP_OWNER")
 
