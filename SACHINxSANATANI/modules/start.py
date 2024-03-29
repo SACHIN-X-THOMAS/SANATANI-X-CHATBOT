@@ -80,7 +80,7 @@ async def repo(_, m: Message):
     )
 
 
-#@dev.on_message(filters.new_chat_members)
-#async def welcome(_, m: Message):
-#    for member in m.new_chat_members:
-#        await m.reply_photo(photo=random.choice(IMG), caption=START)
+@dev.on_message(filters.nnew_chat_members)
+async def welcome(_, m: Message):
+    for member in m.nnew_chat_members:
+        await m.reply_photo(photo=random.choice(IMG), caption=START)
