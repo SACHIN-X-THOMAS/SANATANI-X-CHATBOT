@@ -21,7 +21,7 @@ from SACHINxSANATANI.modules.helpers import (
 )
 
 
-@dev.on_message(filters.command(["ISstart", "ISaistart"]) & ~filters.bot)
+@dev.on_message(filters.command(["start", "ISaistart"]) & ~filters.bot)
 async def start(_, m: Message):
     if m.chat.type == ChatType.PRIVATE:
         accha = await m.reply_text(
