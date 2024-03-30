@@ -10,8 +10,8 @@ BOT_TOKEN = getenv("BOT_TOKEN", None)
 OWNER_ID = int(getenv("OWNER_ID", "5959548791"))
 MONGO_URL = getenv("MONGO_URL", "mongodb+srv://Bikash:Bikashop@bikash.cbkkx4c.mongodb.net/?retryWrites=true&w=majority")
 SUPPORT_GRP = getenv("SUPPORT_GRP", "Il_4ST_FIGHTER_lI")
-UPDATE_CHNL = getenv("UPDATE_CHNL", "ALL_SANATANI_BOT")
-OWNER_USERNAME = getenv("OWNER_USERNAME", "V_VIP_OWNER")
+UPDATE_CHNL = getenv("UPDATE_CHNL", "I_M_FIGHTER")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "nehu_000")
 
 # Random Start Images
 IMG = [
